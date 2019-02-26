@@ -33,7 +33,6 @@ public class HelloRestController {
 		}
 		return response;
 	}
-
 	@RequestMapping(method = RequestMethod.GET, path = "/getUser", produces = "application/json")
 	public User getUser(@RequestParam int userId) {
 		User user = UserDao.getUser(userId);
